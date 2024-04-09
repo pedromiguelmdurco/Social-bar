@@ -1,0 +1,598 @@
+/* Todas as páginas  */
+.nav-item {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* CSS index */
+
+    /* Main Index */
+
+
+    .sobrenos {
+        text-align: center;
+        padding: 16px 20px;
+    }
+
+    .texto1 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .premium {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .live {
+        text-align: center;
+    }
+
+    .efeitos {
+        text-align: center;
+    }
+
+    .famosodobar {
+        text-align: center;
+    }
+
+    .romancedeboteco {
+        text-align: center;
+    }
+
+    .h3 {
+        font-family: cursive;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    @media screen and (max-width:995px) {
+        .hr {
+            display: block;
+        }
+    }
+
+    /* Rodapé */
+
+    .rodape1 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .rodape2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+/* CSS login */
+
+    .text{
+        text-align: center;
+    }
+
+    .text input{
+        border-style: solid;
+        background-color: rgb(255, 138, 0);
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        
+    }
+
+    .login{
+        padding-top: 10%;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .logo img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .bot{
+        background: none;
+        border: none;
+        color: white;
+        padding: 2px;
+        
+    }
+
+    .bran{
+        background:white;
+        height: 5px;
+        color: rgb(255, 138, 0);
+    }
+
+    .barra{
+        font-size: xx-large;
+        color: white;
+    }
+
+    .boto{
+        background: none;
+        border: none;
+        color: rgb(80, 79, 79);
+        padding-top: 5px;
+    }
+
+
+    .footer{
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: x-small;
+    }
+
+
+
+    @media screen and (max-width:480px) {
+        
+        .login{
+            padding-top: 50%;
+        }
+        .footer{
+            padding-top: 150px;
+        }
+
+    }
+
+/* CSS cadastro */
+
+    .logo-header{
+    width: 100px;
+    height: 100px;
+}
+.titulo-pagina{               
+    /* Titulo dá pagina de cadastro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-pagina-premium{               
+    /* Titulo dá pagina de cadastro premium */
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.backgroud-cadastro{
+    background-color: #ffffff;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    background-position: center;
+}
+
+.campos-registro-login{
+    text-align: center;
+}
+.campos-registro-login input{
+    height: 35px;
+    width:100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ff8a00;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.campos-registro{
+    text-align: center;
+}
+
+.olho{
+    padding-top: 5px;
+   
+}
+
+
+.campos-registro input{
+    margin-top: 6px;
+    
+    width:100%;
+    text-align: center;
+    background-color: #ff8a00;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.campos-reg{
+    text-align: center;
+}
+.campos-reg input{
+    margin-top: 6px;
+    
+    width:100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.campo-genero{
+    margin-top: 10px;
+    text-align: center;
+}
+.genero{
+    width: 100%;
+}
+.campo-data{
+    margin-top: 10px;
+    text-align: center;
+}
+.botao-cadastro{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.campo-politica{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.personalizado{
+    margin-top: 20px;
+    text-align: center;
+}
+.text-pronome{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.botao-premium{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.vencimento{
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+#off-personalizado{
+    display: none;
+}
+#premium{
+    display: none;
+}
+#cartao{
+    display: none;
+}
+
+@media screen and (max-width:1400px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:820px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        background-position: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo-header{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+
+    .genero{
+        width: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo-header{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+}
+
+/* CSS Mesas */
+
+    /* header */
+
+    .divulgacao{
+        margin-top: 20px;
+    }
+
+    /* Lives */
+
+    .divisoria{
+        margin-top: 20px;
+        border-right:solid;
+        text-align: center;
+    }
+
+    /* transições de imagens no menu lives */
+
+    img{
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .text-live{
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .bloco {
+        width: 60px;
+        margin: 15px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .bloco img{
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+    }
+    .bloco img:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.3);
+    }
+
+    /* menu mesas */
+
+    .barra-de-pesquisa{
+        margin-left: 120px;
+        width: 350px;
+    }
+
+    /* mesas / menu escondido */
+
+    .mesas{
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .text-teste{
+        margin-left: 70px;
+    }
+
+    #mesas{
+        display: none;
+    }
+
+
+    /* grupos / menu escondido */
+
+    .grupos{
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #grupos{
+        display: none;
+    }
+    
+    /* Modal Video */
+
+    .checker:checked+.modal {
+        display: flex;
+    }
+
+    .modal {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .modal-body {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    .modal-header{
+        justify-content: flex-end;
+    }
+
+    .modal-content {
+        background-color: rgba(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-footer {
+        color: rgb(0, 0, 0);
+        overflow: hidden;
+    }
+
+    .nav-link{
+        display: initial;
+    }
+
+
+/* modal configurações */
+    .nav-conf{
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .nav-conf{
+        cursor: pointer;
+        user-select: none;
+    }
+
+
+/* Página de suporte */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #231865;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #231865;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .perguntas2 {
+border-right: solid;
+  }
+
+
+/* chat */
+
+.chat{
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #e9e7e7;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.botchat{
+  width:100%;
+  left:10px;
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+.digi{
+    display:fixed;
+    position:absolute;
+    bottom: 70px;
+    
+}
+
+
+/* premium html */
+
+.assine1 {
+    color: #ff8a00;
+    font-size: 250%;
+    margin-left: 25%;
+    }
+
+
+
+/* perfil */
+
+/* foto perfil */
+.text-Perfil{
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    margin-top: 18px;
+    font-size: 150%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bloco01 {
+    margin: 10px;
+}
+.bloco01 img{
+    width: 200px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    margin-top: 20px;
+}
+.bloco01 img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: solid thick white;
+    border-radius: 6em
+}
+
+ /* perfil geral */
+
+ .Menu-Perfil{
+     margin-top: 40px;
+ }
+ .descricao-Perfil{
+     color: white;
+     margin-top: 10px;
+ }
+
+ .avaliacaoBar{
+     display: none;
+ }
+
+ .sobreSBar{
+    display: none;
+}
+
+.fotosSBar{
+    display: none;
+}
+
+.amigosSBar{
+    display: none;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}

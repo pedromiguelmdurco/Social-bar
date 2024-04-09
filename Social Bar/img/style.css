@@ -1,0 +1,72 @@
+.text{
+    text-align: center;
+}
+
+.text input{
+    border-style: solid;
+    background-color: rgb(255, 138, 0);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    
+}
+
+.login{
+    padding-top: 10%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    height: 200px;
+    width: 200px;
+}
+
+.bot{
+    background: none;
+    border: none;
+    color: white;
+    padding: 2px;
+    
+}
+
+.bran{
+    background:white;
+    height: 5px;
+    color: rgb(255, 138, 0);
+}
+
+.barra{
+    font-size: xx-large;
+    color: white;
+}
+
+.boto{
+    background: none;
+    border: none;
+    color: rgb(80, 79, 79);
+    padding-top: 5px;
+}
+
+
+.footer{
+    text-align: center;
+    padding-top: 50px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: x-small;
+}
+
+
+
+@media screen and (max-width:480px) {
+    
+    .login{
+        padding-top: 50%;
+    }
+    .footer{
+        padding-top: 150px;
+    }
+
+}

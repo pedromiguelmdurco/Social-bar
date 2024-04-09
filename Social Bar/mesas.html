@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar • Social Bar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <script src="js/mesas.js"></script>
+    <!-- Chamando JS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Chamando CSS -->
+
+</head>
+
+<body style="background-color: #ff8a00;" onload="chat1(),chat2(),chat3()">
+    <!-- Style tá chamando a cor laranja em todo fundo do site -->
+
+    <div class="row" style="background-color: white; margin: 0;">
+
+        <header class="container header">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-2 col-lg-2 justify-content-start">
+                    <a href="mesas.html">
+                        <img style="width: 100px; height: 100px;user-select: none;" src="img/logo.png">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-10 col-lg-10"
+                    style="display: flex;justify-content: flex-end;margin-top: 23px;">
+
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos.html" style="color: black; font-size: 120%;">Eventos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="mesas.html" style="color: black; font-size: 120%;">Bar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black; font-size: 120%;">Chat</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html" style="color: black; font-size: 120%;">Perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <label class="nav-link" style="color: black; font-size: 120%;"
+                                for="Configuracoes">Configurações</label>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="premium.html" style="color: black; font-size: 120%;">Premium</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="container main" style="background-color: #ff8a00;">
+
+
+            <!-- Modal Configuracoes -->
+            <input class="checker" type="checkbox" id="Configuracoes" hidden>
+            <div class="modal">
+
+                <div class="modal-body" style=" background-color: black;">
+                    <div class="modal-header" style="color: white;">
+                        <label for="Configuracoes">Fechar</label>
+                    </div>
+
+                    <div class="modal-main" style=" background-color: black;">
+                        <div class="nav-configuracoes">
+                            <div>
+                                <a href="perfil.html"><label class="nav-conf"
+                                        style="font-size: 120%;">Perfil</label></a>
+                            </div>
+                            <div>
+                                <label class="nav-conf" href="#" style="font-size: 120%;">Informações pessoais</label>
+                            </div>
+                            <div>
+                                <label class="nav-conf" href="suporte.html" style="font-size: 120%;">Ajuda e
+                                    Suporte</label>
+                            </div>
+                            <div>
+                                <label class="nav-conf" href="#" style="font-size: 120%;">Configurações e
+                                    Privacidade</label>
+                            </div>
+                            <div>
+                                <a href="premium.html"><label class="nav-conf" href="premium.html"
+                                        style="font-size: 120%; margin-bottom: 25px;">Conta
+                                        Premium</label></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row modal-footer">
+                        <div class="col-12" style="color: white; font-size: 10px;text-align: center;">
+                            <p>Privacidade · Termos · Publicidade · Escolhas para anúncios · Cookies · Mais · SocialBar
+                                © 2021</p>
+                        </div>
+
+                        <div style="margin-top: 20px; justify-content: center; margin: 10px 0">
+                            <a href="index.html" class="nav-link"
+                                style="color: #FFF; background-color: red; border-radius: 20px"
+                                onclick="closeVideoFromCamera()"> Deslogar / Sair</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Modal Configuracoes -->
+
+            <!-- lives -->
+            <div class="row">
+
+                <div class="col-1 divisoria">
+
+                    <div class="text-live-titulo">
+                        <h3>Lives</h3>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live01.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Wesley Safadão</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live02.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Zé Vaqueiro</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live03.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Costa Gold</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live04.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Gustavo Lima</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live05.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Hariel</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live06.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Alok</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live07.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Jorge e Matheus</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live08.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Leonardo</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live09.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Banda Natiruts</p>
+                    </div>
+
+                    <div class="bloco">
+                        <img src="img/live/live010.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live">
+                        <p>Paola Oliveira</p>
+                    </div>
+
+                    <!-- <div class="bloco">
+                    <img src="img/live/live011.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Fernanda Souza</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live012.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Gisele Vieira</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live013.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Emerson Nogueira</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live014.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Rodrigo Alves</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live015.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Daiane Silva</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live016.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Marcia Varzia</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live017.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Daniel Gonzaga</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live018.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>George Miguel</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live019.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>José Luiz</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live020.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Roberta Miranda</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live021.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Gabriela Alves</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live022.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Roberta Miranda</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live023.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Igor Martins</p></div>
+                    
+                <div class="bloco">
+                    <img src="img/live/live024.png" alt="Image size" title="Image size" />
+                    </div>
+                    <div class="text-live"> <p>Clara rodrigues</p></div> -->
+
+
+                </div>
+
+
+                <div class="col-11 divulgacao">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <a href="https://play.google.com/store/apps/details?id=com.cerveceriamodelo.modelonow&hl=pt_BR&gl=US"
+                                    target="_blank">
+                                    <img src="img/ZВ-Delivery.jpg" class="d-block w-100" alt="..."></a>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=br.com.brainweb.ifood"
+                                    target="_blank">
+                                    <img src="img/Ifood.jpg" class="d-block w-100" alt="..."></a>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=com.cerveceriamodelo.modelonow&hl=pt_BR&gl=US"
+                                    target="_blank">
+                                    <img src="img/ZВ delivery capa.jpg" class="d-block w-100" alt="..."></a>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- carrocel -->
+                    <div style="display: flex;margin-top: 23px; margin-left: 60px;">
+
+                        <ul class="nav">
+
+                            <li class="nav-item">
+                                <div onclick="mesasNone()">
+                                    <a class="nav-link" style="color: black; font-size: 120%;">Mesas</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div onclick="gruposNone()">
+                                    <a class="nav-link" style="color: black; font-size: 120%;">Grupos</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: black; font-size: 120%;">Pessoas Online</a>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="barra-de-pesquisa">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                                aria-label="Search">
+                        </div>
+
+                    </div>
+
+                    <div id="mesas" class="col-11 mesas">
+                        <div class="row" style="display: flex;">
+
+                            <div class="col-3 imagem-mesa">
+                                <label style="cursor: pointer; user-select: none;" for="o">
+                                    <img src="img/Mesa.png">
+                                </label>
+                                <div class="text-teste">
+                                    <label style="cursor: pointer; user-select: none; font-family:fantasy;" for="o">Esse
+                                        é o Diploma?</label>
+                                </div>
+                            </div>
+                            <div class="col-3 imagem-mesa">
+                                <label style="cursor: pointer; user-select: none;font-family:fantasy;" for="a">
+                                    <img src="img/Mesa.png">
+                                </label>
+                                <div class="text-teste">
+                                    <label style="cursor: pointer; user-select: none;font-family:fantasy;"
+                                        for="a">Cerveja? quero !</label>
+                                </div>
+                            </div>
+                            <div class="col-3 imagem-mesa">
+                                <label style="cursor: pointer; user-select: none;font-family:fantasy;" for="a2">
+                                    <img src="img/Mesa.png">
+                                </label>
+                                <div class="text-teste">
+                                    <label style="cursor: pointer; user-select: none;font-family:fantasy;" for="a2">Cara
+                                        de Cavalo.</label>
+                                </div>
+                            </div>
+                            <div class="col-3 imagem-mesa" onclick="chat4()">
+                                <label style="cursor: pointer; user-select: none;font-family:fantasy;" for="a3">
+                                    <img src="img/Mesa.png">
+                                </label>
+                                <div class="text-teste">
+                                    <label style="cursor: pointer; user-select: none;font-family:fantasy;"
+                                        for="a3">Rinha
+                                        de Galo.</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- primeira mesa  -->
+                    <!-- MODAL DE VÍDEO -->
+                    <input class="checker" type="checkbox" id="o" hidden>
+                    <div class="modal">
+
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <label for="o">Fechar</label>
+                            </div>
+
+                            <div class="row">
+
+                                <h1 style="text-align:center;">Esse é o Diploma?</h1>
+
+                                <div class="row modal-main">
+
+                                    <div class="col-6" style="height: 53vh;">
+                                        <video id="video1" autoplay width="700" controls="controls"></video>
+                                    </div>
+
+                                    <div class="col-6 chat-mesas">
+
+                                        <div class="row chat">
+
+                                            <div id="chat1" class=" row">
+                                                <!-- deixar vazio -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11"></div>
+                                                <div class="col-1">
+                                                    <p id="escr1" class="digi"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: green; margin-right: 10px; border-radius: 20px;"
+                                        onclick="startVideoFromCamera1()">Iniciar Câmera</button>
+
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: red; border-radius: 20px"
+                                        onclick="closeVideoFromCamera1()">Fechar Câmera</button>
+                                </div>
+
+                                <div class="col-4">
+
+                                    <input id="chat2" onfocus="escreven1()" onblur="escre1()" type="text"
+                                        style="  width: 100%;">
+
+                                </div>
+
+                                <div class="col-2">
+
+                                    <button onclick="enviar1()" class="botchat">Enviar</button>
+                                    <button onclick="limpar1()" class="botchat">Limpar</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- segunda mesa -->
+
+                    <input class="checker" type="checkbox" id="a" hidden>
+                    <div class="modal">
+
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <label for="a">Fechar</label>
+                            </div>
+
+                            <div class="row">
+
+                                <h1 style="text-align:center;">Cerveja? quero !</h1>
+
+                                <div class="row modal-main">
+
+                                    <div class="col-6" style="height: 53vh;">
+                                        <video id="video2" autoplay width="700" controls="controls"></video>
+                                    </div>
+
+                                    <div class="col-6 chat-mesas">
+
+                                        <div class="row chat">
+
+                                            <div id="chat3" class=" row">
+                                                <!-- deixar vazio -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11"></div>
+                                                <div class="col-1">
+                                                    <p id="escr2" class="digi"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: green; margin-right: 10px; border-radius: 20px;"
+                                        onclick="startVideoFromCamera2()">Iniciar Câmera</button>
+
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: red; border-radius: 20px"
+                                        onclick="closeVideoFromCamera2()">Fechar Câmera</button>
+                                </div>
+
+                                <div class="col-4">
+
+                                    <input id="chat4" onfocus="escreven2()" onblur="escre2()" type="text"
+                                        style="  width: 100%;">
+
+                                </div>
+
+                                <div class="col-2">
+
+                                    <button onclick="enviar2()" class="botchat">Enviar</button>
+                                    <button onclick="limpar2()" class="botchat">Limpar</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- terceira mesa -->
+
+
+
+                    <input class="checker" type="checkbox" id="a2" hidden>
+                    <div class="modal">
+
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <label for="a2">Fechar</label>
+                            </div>
+
+                            <div class="row">
+
+                                <h1 style="text-align:center;">Cara de Cavalo.</h1>
+
+                                <div class="row modal-main">
+
+                                    <div class="col-6" style="height: 53vh;">
+                                        <video id="video3" autoplay width="700" controls="controls"></video>
+                                    </div>
+
+                                    <div class="col-6 chat-mesas">
+
+                                        <div class="row chat">
+
+                                            <div id="chat5" class=" row">
+                                                <!-- deixar vazio -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11"></div>
+                                                <div class="col-1">
+                                                    <p id="escr3" class="digi"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: green; margin-right: 10px; border-radius: 20px;"
+                                        onclick="startVideoFromCamera3()">Iniciar Câmera</button>
+
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: red; border-radius: 20px"
+                                        onclick="closeVideoFromCamera3()">Fechar Câmera</button>
+                                </div>
+
+                                <div class="col-4">
+
+                                    <input id="chat6" onfocus="escreven3()" onblur="escre3()" type="text"
+                                        style="  width: 100%;">
+
+                                </div>
+
+                                <div class="col-2">
+
+                                    <button onclick="enviar3()" class="botchat">Enviar</button>
+                                    <button onclick="limpar3()" class="botchat">Limpar</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- quarta mesa -->
+
+
+                    <input class="checker" type="checkbox" id="a3" hidden>
+                    <div class="modal">
+
+                        <div class="modal-body">
+
+                            <div class="modal-header">
+                                <label for="a3">Fechar</label>
+                            </div>
+
+                            <div class="row">
+
+                                <h1 style="text-align:center;">Rinha de Galo.</h1>
+
+                                <div class="row modal-main">
+
+                                    <div class="col-6" style="height: 53vh;">
+                                        <video id="video4" autoplay width="700" controls="controls"></video>
+                                    </div>
+
+                                    <div class="col-6 chat-mesas">
+
+                                        <div class="row chat">
+
+                                            <div id="chat7" class=" row">
+                                                <!-- deixar vazio -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-11"></div>
+                                                <div class="col-1">
+                                                    <p id="escr4" class="digi"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: green; margin-right: 10px; border-radius: 20px;"
+                                        onclick="startVideoFromCamera4()">Iniciar Câmera</button>
+
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: red; border-radius: 20px"
+                                        onclick="closeVideoFromCamera4()">Fechar Câmera</button>
+                                </div>
+
+                                <div class="col-4">
+
+                                    <input id="chat8" onfocus="escreven4()" onblur="escre4()" type="text"
+                                        style="  width: 100%;">
+
+                                </div>
+
+                                <div class="col-2">
+
+                                    <button onclick="enviar4()" class="botchat">Enviar</button>
+                                    <button onclick="limpar4()" class="botchat">Limpar</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- grupos -->
+
+
+                    <div id="grupos" class="col-11 grupos">
+
+                        <div class="imagem-grupo">
+                            <label style="cursor: pointer; user-select: none;" for="grupoModal">
+                                <img src="img/Grupo.png">
+                            </label>
+                        </div>
+                        <div class="text-teste">
+                            <label style="cursor: pointer; user-select: none;font-family:fantasy;"
+                                for="grupoModal">Galera do
+                                Trucão</label>
+                        </div>
+
+                        <input class="checker" type="checkbox" id="grupoModal" hidden>
+                        <div class="modal">
+
+                            <div class="modal-body">
+
+                                <div class="modal-footer">
+                                    <label for="grupoModal">Fechar</label>
+                                </div>
+
+                                <div class="modal-content">
+                                    <img style="width: 200px; height: 200px;" src="img-teste/um-pouco.jpg" alt="">
+                                </div>
+
+                                <div style="display: flex; justify-content: center; margin: 10px 0">
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: green; margin-right: 10px; border-radius: 20px;"
+                                        onclick="">Iniciar Chat</button>
+
+                                    <button class="nav-link"
+                                        style="color: #FFF; background-color: red; border-radius: 20px"
+                                        onclick="">Fechar Chat</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    </div> <!-- Div fecha container -->
+    </div>
+
+    </main>
+
+    <footer class="container footer" style="background-color: #ff8a00;">
+
+        <i class="far fa-copyright"> 2021 SocialBar</i>
+        <p style="float: right;">Português(Brasil)</p>
+
+    </footer>
+
+    <!-- carrosel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

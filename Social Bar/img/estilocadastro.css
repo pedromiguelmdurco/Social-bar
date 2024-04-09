@@ -1,0 +1,166 @@
+.logo-header{
+    width: 100px;
+    height: 100px;
+}
+.titulo-pagina{               
+    /* Titulo dá pagina de cadastro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.backgroud-cadastro{
+    background-color: #ffffff;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    background-position: center;
+}
+
+.campos-registro-login{
+    text-align: center;
+}
+.campos-registro-login input{
+    height: 35px;
+    width:100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ff8a00;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.campos-registro{
+    text-align: center;
+}
+.campos-registro input{
+    margin-top: 6px;
+    
+    width:100%;
+    text-align: center;
+    background-color: #ff8a00;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.campos-reg{
+    text-align: center;
+}
+.campos-reg input{
+    margin-top: 6px;
+    
+    width:100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.campo-genero{
+    margin-top: 10px;
+    text-align: center;
+}
+.genero{
+    width: 100%;
+}
+.campo-data{
+    margin-top: 10px;
+    text-align: center;
+}
+.botao-cadastro{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.campo-politica{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.personalizado{
+    margin-top: 20px;
+    text-align: center;
+}
+.text-pronome{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.botao-premium{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.vencimento{
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+#off-personalizado{
+    display: none;
+}
+#premium{
+    display: none;
+}
+#cartao{
+    display: none;
+}
+
+@media screen and (max-width:1400px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:820px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        background-position: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo-header{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+
+    .genero{
+        width: 50%;
+    }
+}
+@media screen and (max-width:480px){
+    
+    .backgroud-cadastro{
+        background-color: #ffffff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo-header{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+    }
+}
+

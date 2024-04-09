@@ -1,0 +1,66 @@
+/* header */
+
+.divulgacao{
+    margin-top: 20px;
+}
+
+/* Lives */
+
+.divisoria{
+    margin-top: 20px;
+    border-right:solid;
+    text-align: center;
+}
+
+/* transições de imagens no menu lives */
+
+img{
+    max-width: 100%;
+    margin-left: 10px;
+   }
+   .bloco {
+    width: 60px;
+    margin: 15px;
+   }
+   .bloco img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   }
+   .bloco img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+   }
+
+/* menu mesas */
+
+.barra-de-pesquisa{
+    margin-left: 120px;
+}
+
+/* mesas / menu escondido */
+
+.mesas{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.text-teste{
+    margin-left: 70px;
+}
+
+#mesas{
+    display: none;
+}
+
+
+/* grupos / menu escondido */
+
+.grupos{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#grupos{
+    display: none;
+}
+

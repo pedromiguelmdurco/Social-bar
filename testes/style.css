@@ -1,0 +1,22 @@
+.chat{
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgba(206, 18, 18, 0.51);
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.botchat{
+  width:100%;
+  left:10px;
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+.digi{
+    display:fixed;
+    position:absolute;
+    bottom: 50px;
+    
+}
